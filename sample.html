@@ -1,0 +1,37 @@
+<HTML>
+<head>
+<script>
+function sample()
+{
+var x=document.getElementById("name").value;
+var ph=document.getElementById("num").value;
+var p=/[a-z]/g;
+var res=ph.match(p);
+var array=[1,2,3,4,5];
+document.getElementById("demo").innerHTML =res;
+document.getElementById("demo").innerHTML =""+array[0]+3;
+document.getElementById("demo").innerHTML =multiply(array[1],array[2]);
+if(res==null)
+{alert("hii");
+document.getElementById("demo").innerHTML ="name:"+x;
+document.getElementById("demo").innerHTML ="number:"+ph;
+}
+else
+document.getElementById("demo").innerHTML = "invalid phone number";
+}
+function multiply(a,b) 
+{
+  return Math.sqrt(25); 
+}
+
+</script>
+</head>
+<body>
+<form id="form">
+name<input type="text" name="name" id="name">
+<br><br>num<input type="text" name="num" id="num">
+<input type="button" name="try" value="try" onclick="sample()">
+</form>
+<p id="demo"></p>
+</body>
+</html>
