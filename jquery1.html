@@ -40,7 +40,7 @@ $(document).ready(function(){
 	
 	<input type="button" value="FadeTo 50%" onclick="fadeToToggle('fadeTo', this)" />
 	<div id="fadeTo">Advanced fade out with percentage</div>
-
+<button>internship</button>
 </body>
 <script>
 // javascript function for fade effect toggling
@@ -66,4 +66,15 @@ $(document).ready(function(){
 		}
 	}
 </script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("demo_test.asp", function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+
+
 </html>
